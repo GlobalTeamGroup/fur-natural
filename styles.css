@@ -190,6 +190,15 @@ p, h1, h2, h3, h4, span:not(.gradient-text):not(.logo-accent):not(.stat-number):
     -3px  0   0 #000, 3px  0   0 #000 !important;
 }
 
+/* HERO LOGO */
+.hero-logo {
+  width: 120px; height: 120px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.6));
+}
+
 /* REVEAL ANIMATION */
 .reveal-3d {
   opacity: 0; transform: translateY(30px);
