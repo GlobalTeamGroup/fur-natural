@@ -5,7 +5,7 @@
 
 const TOTAL_FRAMES = 900;
 const PAGE_COUNT   = 6;
-const LERP         = 0.04;
+const LERP         = 0.02;
 const CONCURRENCY  = 48;
 const isMobile     = innerWidth < 768;
 const FRAME_DIR    = isMobile ? 'frames-mobile' : 'frames-webp';

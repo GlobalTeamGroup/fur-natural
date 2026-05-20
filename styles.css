@@ -26,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   background: var(--bg);
 }
 body {
@@ -163,6 +163,7 @@ p, li, span, strong, em, a, div, blockquote, label, td, th, figcaption {
   word-break: normal;
   hyphens: none;
   overflow-wrap: break-word;
+  overflow-y: auto;
 }
 .page.is-active {
   opacity: 1; visibility: visible; pointer-events: auto;
@@ -184,6 +185,7 @@ p, h1, h2, h3, h4, span:not(.gradient-text):not(.logo-accent):not(.stat-number):
   background-clip: text;
   -webkit-text-stroke: 0;
   text-shadow: none !important;
+  filter: drop-shadow(0 0 1px #000) drop-shadow(0 0 2px #000) drop-shadow(0 0 4px rgba(0,0,0,.7));
 }
 
 /* HERO LOGO */
@@ -209,12 +211,13 @@ p, h1, h2, h3, h4, span:not(.gradient-text):not(.logo-accent):not(.stat-number):
 /* BADGES */
 .hero-badge, .section-badge {
   display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(201,168,76,0.12);
+  background: rgba(0,0,0,0.50);
   border: 1px solid rgba(201,168,76,0.4);
   color: var(--gold); font-size: 0.75rem; font-weight: 600;
   letter-spacing: 0.12em; text-transform: uppercase;
-  padding: 6px 16px; border-radius: 100px;
+  padding: 8px 20px; border-radius: 100px;
   margin-bottom: 20px; text-shadow: none !important;
+  backdrop-filter: blur(6px);
 }
 
 /* === HERO === */
