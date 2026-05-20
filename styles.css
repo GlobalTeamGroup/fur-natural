@@ -151,15 +151,22 @@ p, li, span, strong, em, a, div, blockquote, label, td, th, figcaption {
 
 /* PAGES */
 .page {
+  position: relative;
   min-height: 100vh; min-height: 100dvh;
-  scroll-snap-align: start;
   display: flex; flex-direction: column;
   justify-content: center; align-items: center;
-  position: relative;
-  padding: 100px 24px 40px;
+  padding: 110px 6% 36px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity .7s, visibility 0s .7s;
+  background: transparent;
+  scroll-snap-align: start;
   word-break: normal;
   hyphens: none;
   overflow-wrap: break-word;
+}
+.page.is-active {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transition: opacity .7s;
 }
 .page-inner {
   width: 100%; max-width: 1100px;
