@@ -36,6 +36,12 @@ body {
   background: var(--bg);
 }
 
+/* GOLDEN RULE: ALL TEXT WHITE + BLACK SHADOW */
+p, li, span, strong, em, a, div, blockquote, label, td, th, figcaption {
+  color: #fff;
+  text-shadow: var(--ts);
+}
+
 /* CANVAS */
 #gl-canvas {
   position: fixed; inset: 0;
