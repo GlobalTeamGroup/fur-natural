@@ -5,7 +5,7 @@
 
 const TOTAL_FRAMES = 900;
 const PAGE_COUNT   = 6;
-const LERP         = 0.08;
+const LERP         = 0.04;
 const CONCURRENCY  = 48;
 const isMobile     = innerWidth < 768;
 const FRAME_DIR    = isMobile ? 'frames-mobile' : 'frames-webp';
@@ -43,7 +43,7 @@ const loaderEl = document.createElement('div');
 loaderEl.id = 'loader';
 loaderEl.innerHTML = `
   <div class="loader-inner">
-    <img src="images/logo.svg" alt="Fur Natural" style="width:112px;height:112px;object-fit:contain;border-radius:10px;margin-bottom:8px">
+    <img src="images/logo.png" alt="Fur Natural" style="width:112px;height:112px;object-fit:contain;border-radius:10px;margin-bottom:8px">
     <div class="loader-logo">FUR NATURAL</div>
     <div class="loader-bar-wrap"><div class="loader-bar" id="loader-bar"></div></div>
     <div class="loader-pct" id="loader-pct">0%</div>

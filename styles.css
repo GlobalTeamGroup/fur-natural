@@ -183,11 +183,7 @@ p, h1, h2, h3, h4, span:not(.gradient-text):not(.logo-accent):not(.stat-number):
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-text-stroke: 0;
-  text-shadow:
-    -3px -3px 0 #000, 3px -3px 0 #000,
-    -3px  3px 0 #000, 3px  3px 0 #000,
-     0   -3px 0 #000, 0    3px 0 #000,
-    -3px  0   0 #000, 3px  0   0 #000 !important;
+  text-shadow: none !important;
 }
 
 /* HERO LOGO */
