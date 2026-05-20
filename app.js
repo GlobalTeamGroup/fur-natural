@@ -126,6 +126,8 @@ loadAllFrames().then(() => {
     loader.classList.add('fade-out');
     setTimeout(() => loader.remove(), 900);
   }
+  // Activate first page
+  if (pages[0]) pages[0].classList.add('is-active');
 });
 
 // ============================================================
